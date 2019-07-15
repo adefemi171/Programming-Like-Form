@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Survey of Programming Language By Adefemi Micheal Afuwape</title>
+		<!-- Afuwape Adefemi Micheal Tuesday, July 16, 2019 at 11:59 pm -->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet">
+		<!-- <script src="/js/dev.js" type="text/javascript"></script> -->
+    </head>
+    <body>
+		<h1>CSC 322: SURVEY OF PROGRAMMING LANGUAGE</h1>
+		<img src="img/femi.jpg" alt="picture" id="img_femi">
+		<form action="php_file/insert.php" method="POST" id="form1">
+			<section>
+				<div>
+					<input type="text" placeholder="First Name" name="first_name" required>
+				</div>
+				<br>
+				<div>
+					<input type="text" placeholder="Middle Name" name="middle_name">
+				</div>
+				<br>
+				<div>
+					<input type="text" placeholder="Last Name" name="last_name" required>
+				</div>
+				<br>
+				<div>
+					<input type="email" placeholder="Email Address" name="email" required>
+				</div>
+				<br>
+				<div>
+					<div>Gender</div>
+					<span>
+						<input type="radio" name="sex" value="1" >
+						<label>Female</label>
+				   </span>
+				   <span>
+						<input type="radio" name="sex" value="2" >
+						<label>Male</label>
+				   </span>
+				</div>
+				<br>
+				<div>
+					<input type="tel" pattern="[0-9]{11}" placeholder="09056565656" name="m_number" >
+				</div>
+				<br>
+				<div>
+					<input type="text" placeholder="Address" name="h_address" >
+				</div>
+				<br>
+				<div>
+					<input type="text" placeholder="City" name="city" >
+				</div>
+				<br>
+				<div>
+					<input type="text" value="Nigeria" name="country" disabled>
+				</div>
+				<br>
+				<div>
+					<select id="State" name="states" >
+						<option value="" disabled selected>Select your State</option>
+						   <option value="Abia">Abia</option>
+   						   <option value="Adamawa">Adamawa</option>
+   						   <option value="Akwa Ibom">Akwa Ibom</option>
+  						   <option value="Anambra">Anambra</option>
+   						   <option value="Bauchi">Bauchi</option>
+							<option value="Bayelsa">Bayelsa</option>
+							<option value="Benue">Benue</option>
+							<option value="Borno">Borno</option>
+							<option value="Cross River">Cross River</option>
+							<option value="Delta">Delta</option>
+							<option value="Ebonyi">Ebonyi</option>
+							<option value="Edo">Edo</option>
+							<option value="Ekiti">Ekiti</option>
+							<option value="Enugu">Enugu</option>
+							<option value="Gombe">Gombe</option>
+							<option value="Imo">Imo</option>
+							<option value="Jigawa">Jigawa</option>
+							<option value="Kaduna">Kaduna</option>
+							<option value="Kano">Kano</option>
+							<option value="Katsina">Katsina</option>
+							<option value="Kebbi">Kebbi</option>
+							<option value="Kogi">Kogi</option>
+							<option value="Kwara">Kwara</option>
+							<option value="Lagos">Lagos</option>
+							<option value="Nasarawa">Nasarawa</option>
+							<option value="Niger">Niger</option>
+							<option value="Ogun">Ogun</option>
+							<option value="Ondo">Ondo</option>
+							<option value="Osun">Osun</option>
+							<option value="Oyo">Oyo</option>
+							<option value="Plateau">Plateau</option>
+							<option value="Rivers">Rivers</option>
+							<option value="Sokoto">Sokoto</option>
+							<option value="Taraba">Taraba</option>
+							<option value="Yobe">Yobe</option>
+							<option value="Zamfara">Zamfara</option>
+							<option value="Federal Capital Territory">Federal Capital Territory</option>
+					</select>
+				</div>
+				<br>
+				<!-- <div id="errorAlert">You need to first correct your invalid inputs before you can submit.</div> -->
+			</section>
+        	<table  border="1" id="table_rating">
+        	     <thead>
+        	         <tr>
+        	             <th>Programming Languages</th>
+        	             <!-- <th>Friendly</th>
+        	             <th>Not Friendly</th>
+        	             <th>Never Like it</th> -->
+        	         </tr>
+        	         <tr>
+        	             <th></th>
+        	             <th>Friendly</th>
+        	             <th>Not Friendly</th>
+        	             <th>Never Like It</th>
+        	         </tr>
+        	     </thead>
+        	     <tbody>
+					 <section>
+        	             <tr>
+        	                 <td>
+        	                     <div>
+        	                         C:
+        	                         <label><input type="checkbox" value="C" ></label>
+
+	                             </div>
+	                         </td>
+	                         <td>
+	                             <div>
+	                                 <label> <input type="radio" name="optRadioC" class="radiotext" value= "Friendly" ></label>
+	                             </div>
+	                         </td>
+	                         <td>
+	                             <div>
+	                                 <label><input type="radio" name="optRadioC" class="radiotext" value= "Not_Friendly"></label>
+	                             </div>
+	                         </td>
+	                         <td>
+	                             <div>
+	                                 <label><input type="radio" name="optRadioC" class="radiotext" value= "Never_like_It"></label>
+	                             </div>
+							 </td>
+	                     </tr>
+
+	                     <tr>
+	                         <td>
+	                             <div>
+	                                 C++:
+	                                 <label><input type="checkbox" value="C++" ></label>
+         	                    </div>
+         	                </td>
+         	                <td>
+         	                    <div>
+         	                        <label> <input type="radio" name="optRadioCplus" class="radiotext" value= "Friendly"></label>
+         	                    </div>
+         	                </td>
+         	                <td>
+         	                    <div>
+         	                        <label><input type="radio" name="optRadioCplus" class="radiotext" value= "Not_Friendly"></label>
+         	                    </div>
+         	                </td>
+         	                <td>
+         	                    <div>
+         	                        <label><input type="radio" name="optRadioCplus" class="radiotext" value= "Never_like_It"></label>
+         	                    </div>
+         	                </td>
+         	           </tr>
+          	           <tr>
+                      	    <td>
+                      	       <div>
+                      	           Java:
+                      	           <label><input type="checkbox" value="Java" ></label>
+                       	      </div>
+                       	    </td>
+            	             <td>
+            	                 <div>
+            	                     <label> <input type="radio" name="optRadioJava" class="radiotext" value= "Friendly"></label>
+            	                 </div>
+            	             </td>
+            	             <td>
+            	                 <div>
+            	                     <label><input type="radio" name="optRadioJava" class="radiotext" value= "Not_Friendly"></label>
+            	                 </div>
+            	             </td>
+            	             <td>
+            	                 <div>
+            	                     <label><input type="radio" name="optRadioJava" class="radiotext" value= "Never_like_It"></label>
+            	                 </div>
+            	             </td>
+            	         </tr>
+    	                 <tr>
+    	                     <td>
+    	                         <div>
+    	                             Python:
+    	                             <label><input type="checkbox" value="Python" ></label>
+
+	                             </div>
+	                         </td>
+	                         <td>
+	                             <div>
+	                                 <label> <input type="radio" name="optRadioPython" class="radiotext" value= "Friendly"></label>
+	                             </div>
+	                         </td>
+	                         <td>
+	                             <div>
+	                                 <label><input type="radio" name="optRadioPython" class="radiotext" value= "Not_Friendly"></label>
+	                             </div>
+	                         </td>
+	                         <td>
+	                             <div>
+	                                 <label><input type="radio" name="optRadioPython" class="radiotext" value= "Never_like_It"></label>
+	                             </div>
+	                         </td>
+	                    </tr>
+	                </section>
+            	</tbody>
+       		 </table>
+            <input type="submit" name="submit" value="Submit" id="register">
+			<input type="reset" name="reset" value="Reset" id="reset" onclick="confirm('Are You sure?')">
+			<p></p>
+
+		</form>
+		<article id="article_footer">
+		<div>Want To Reach Me?</div>
+		<div>
+			<h6>Address</h6>
+			<address>
+				14, Imobi Street, Idimu, Ikotun, Lagos, Nigeria
+			</address>
+			<h6>Phone</h6>
+			<address>
+				<a href="tel:(0)8163891244">(0)8163891244</a>
+			</address>
+			<h6>Email Address</h6>
+			<address>
+				<a href="mailto:adefemi171@gmail.com">adefemi171@gmail.com</a>
+			</address>
+		</div>
+		<p></p>
+		<footer>
+			<div style="font-size: 14px;">
+				Copyright © Adefemi. <span>All rights reserved</span>
+			</div>
+		</footer>
+		</article>
+
+    </body>
+</html>
